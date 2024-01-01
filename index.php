@@ -278,6 +278,14 @@ include "functions.php";
                 <?php $i++; ?>
                 <?php endforeach; ?>
             </div>
+
+            <div class="flex justify-end">
+                <a href="seluruh-laporan.php"
+                    class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Lihat
+                    Seluruh
+                    Laporan</a>
+            </div>
+
         </div>
     </section>
     <!-- Laporan Section End -->
