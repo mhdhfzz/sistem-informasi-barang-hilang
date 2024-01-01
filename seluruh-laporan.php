@@ -112,7 +112,7 @@ include "functions.php";
     <!-- Header End -->
 
     <!-- Laporan Section Start -->
-    <section id="laporan" class="bg-secondary py-32 dark:bg-slate-800">
+    <section id="laporan" class="bg-white py-32 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="mx-auto max-w-xl text-center">
