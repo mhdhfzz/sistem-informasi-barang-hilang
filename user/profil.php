@@ -129,7 +129,7 @@ if( isset($_POST["submit"])) {
     <!-- Header End -->
 
     <!-- Profil Section Start -->
-    <section class=" bg-white dark:bg-bcg">
+    <section class=" bg-white dark:bg-bcg" id="profil">
         <div class="container py-32">
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="space-y-12">
@@ -339,7 +339,7 @@ if( isset($_POST["submit"])) {
     <!-- Footer End -->
 
     <!-- Back to top Start -->
-    <a href="#home"
+    <a href="#profil"
         class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
         id="to-top">
         <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
