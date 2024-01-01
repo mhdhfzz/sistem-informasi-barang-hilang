@@ -59,34 +59,29 @@ include "functions.php";
                         <ul class="block xl:flex">
                             <li class="group">
                                 <a href="index.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
                             </li>
                             <li class="group">
-                                <a href="laporan-barang-temuan.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Lapor
+                                <a href="user/laporan-barang-temuan.php"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Lapor
                                     Barang Temuan</a>
                             </li>
                             <li class="group">
-                                <a href="laporan-barang-hilang.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Lapor
+                                <a href="user/laporan-barang-hilang.php"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Lapor
                                     Barang Hilang</a>
                             </li>
                             <li class="group">
                                 <a href="index.php#faq"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">FAQ</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">FAQ</a>
                             </li>
                             <li class="group">
-                                <a href="riwayat-laporan.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Riwayat
-                                    Laporan</a>
+                                <a href="masuk.php"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Masuk</a>
                             </li>
                             <li class="group">
-                                <a href="profil.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Profil</a>
-                            </li>
-                            <li class="group">
-                                <a href="../keluar.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Keluar</a>
+                                <a href="daftar.php"
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Daftar</a>
                             </li>
                             <li class="mt-3 flex items-center pl-8 lg:mt-0">
                                 <div class="flex">
