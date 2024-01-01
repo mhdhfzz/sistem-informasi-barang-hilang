@@ -1,5 +1,5 @@
 ## Cara lakukan perubahan pada css
-1.  Pastikan sudah terinstall nodejs pada personal compuetr yang dimiliki, jika belum silahkan [install](https://nodejs.org/) terlebih dahulu 
+1.  Pastikan sudah terinstall nodejs pada personal computer yang dimiliki, jika belum silahkan [install](https://nodejs.org/) terlebih dahulu 
 
     cara cek versi nodejs dengan buka terminal lalu ketik node -v
 
