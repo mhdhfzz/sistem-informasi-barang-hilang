@@ -73,6 +73,8 @@ $email = $_SESSION["user"];
                                     class="block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">
                                     <?= $row["nama_barang"]; ?></p>
                                 <p class="italic mb-1 dark:text-white">Diposting
+                                    <span style="font-style: normal; font-weight:600"><?= $row["nama"]; ?> </span>
+                                    </br>
                                     <?php
                                     $awal  = date_create($row["waktu_dibuat"]);
                                     $akhir = date_create(); // waktu sekarang, pukul 06:13
@@ -107,17 +109,20 @@ $email = $_SESSION["user"];
                                         <div
                                             class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
                                             <!--Modal title-->
-                                            <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200 "
+                                            <h5 class="text-lg font-medium leading-normal text-neutral-800 dark:text-neutral-200 "
                                                 id="exampleModalCenteredScrollableLabel"><span
                                                     class="text-primary dark:text-secondary"><?= $row["nama_barang"]; ?></span>
 
                                                 </br>
-                                                <p>Diposting <?php
-                                                $awal  = date_create($row["waktu_dibuat"]);
-                                                $akhir = date_create(); // waktu sekarang, pukul 06:13
-                                                $diff  = date_diff( $akhir, $awal );
-                                                echo $diff->h;
-                                                ?> jam yang lalu</p>
+                                                <p>Diposting <?= $row["nama"]; ?>
+                                                    </br>
+                                                    <?php
+                                                    $awal  = date_create($row["waktu_dibuat"]);
+                                                    $akhir = date_create(); // waktu sekarang, pukul 06:13
+                                                    $diff  = date_diff( $akhir, $awal );
+                                                    echo $diff->h;
+                                                    ?> jam yang lalu
+                                                </p>
                                             </h5>
 
                                             <!--Close button-->
