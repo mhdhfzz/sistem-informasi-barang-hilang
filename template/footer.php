@@ -48,10 +48,12 @@
 				</div> -->
 
     <div class="w-full pt-10">
-        <p class="text-center text-xs font-medium text-slate-500">
-            Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://instagram.com/sandhikagalih"
-                target="_blank" class="font-bold text-primary">Kelompok 3</a>, menggunakan
-            <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
+        <p class="text-center text-xs font-medium text-slate-400">
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh
+            <span class="font-bold text-secondary">Kelompok 3</span>,
+            menggunakan <a href="https://tailwindcss.com" target="_blank" class="font-bold text-secondary">Tailwind
+                CSS
+            </a>.
         </p>
     </div>
     </div>
