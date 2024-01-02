@@ -3,7 +3,7 @@ session_start();
 if(!isset($_SESSION["user"]))
 header("location: ../masuk.php");
 
-include "../functions.php";
+include "../query/functions.php";
 
 // ambil data di url
 $id = $_GET["id"];
@@ -59,74 +59,7 @@ if( isset($_POST["submit"])) {
 
 <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-        <div class="container">
-            <div class="relative flex items-center justify-between">
-                <div class="px-4">
-                    <a href="index.php" class="block py-6 text-2xl font-bold text-primary italic">iLost</a>
-                </div>
-                <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block xl:hidden">
-                        <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-                    </button>
-
-                    <nav id="nav-menu"
-                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-backgr py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 xl:static xl:block xl:max-w-full xl:rounded-none xl:bg-transparent xl:shadow-none xl:dark:bg-transparent">
-                        <ul class="block xl:flex">
-                            <li class="group">
-                                <a href="index.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
-                            </li>
-                            <li class="group">
-                                <a href="laporan-barang-temuan.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Lapor
-                                    Barang Temuan</a>
-                            </li>
-                            <li class="group">
-                                <a href="laporan-barang-hilang.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Lapor
-                                    Barang Hilang</a>
-                            </li>
-                            <li class="group">
-                                <a href="index.php#faq"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">FAQ</a>
-                            </li>
-                            <li class="group">
-                                <a href="riwayat-laporan.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Riwayat
-                                    Laporan</a>
-                            </li>
-                            <li class="group">
-                                <a href="profil.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Profil</a>
-                            </li>
-                            <li class="group">
-                                <a href="../keluar.php"
-                                    class="mx-5 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Keluar</a>
-                            </li>
-                            <li class="mt-3 flex items-center pl-8 lg:mt-0">
-                                <div class="flex">
-                                    <span class="mr-2 text-sm text-slate-500">light</span>
-                                    <input type="checkbox" class="hidden" id="dark-toggle" />
-                                    <label for="dark-toggle">
-                                        <div
-                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                                            <div
-                                                class="toggle-circle h-4 w-4 rounded-full bg-backgr transition duration-300 ease-in-out">
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <span class="ml-2 text-sm text-slate-500">dark</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php include "../template/navbar-user.php"; ?>
     <!-- Header End -->
 
     <!-- Laporan Section Start -->
@@ -293,63 +226,7 @@ if( isset($_POST["submit"])) {
 
 
     <!-- Footer Start -->
-    <footer class="pt-24 pb-12 bg-slate-800">
-        <!-- <div class="container">
-				<div class="flex flex-wrap">
-					<div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
-						<h2 class="mb-5 text-4xl font-bold text-white">WPU</h2>
-						<h3 class="mb-2 text-2xl font-bold">Hubungi Kami</h3>
-						<p>sandhikagalih@gmail.com</p>
-						<p>Jl. Dr. Setiabudhi No. 193</p>
-						<p>Bandung</p>
-					</div>
-					<div class="mb-12 w-full px-4 md:w-1/3">
-						<h3 class="mb-5 text-xl font-semibold text-white">Kategori Tulisan</h3>
-						<ul class="text-slate-300">
-							<li>
-								<a href="#" class="mb-3 inline-block text-base hover:text-primary">Programming</a>
-							</li>
-							<li>
-								<a href="#" class="mb-3 inline-block text-base hover:text-primary">Teknologi</a>
-							</li>
-							<li>
-								<a href="#" class="mb-3 inline-block text-base hover:text-primary">Gaya Hidup</a>
-							</li>
-						</ul>
-					</div>
-					<div class="mb-12 w-full px-4 md:w-1/3">
-						<h3 class="mb-5 text-xl font-semibold text-white">Tautan</h3>
-						<ul class="text-slate-300">
-							<li>
-								<a href="#home" class="mb-3 inline-block text-base hover:text-primary">Beranda</a>
-							</li>
-							<li>
-								<a href="#about" class="mb-3 inline-block text-base hover:text-primary">Tentang Saya</a>
-							</li>
-							<li>
-								<a href="#portfolio" class="mb-3 inline-block text-base hover:text-primary">Portfolio</a>
-							</li>
-							<li>
-								<a href="#clients" class="mb-3 inline-block text-base hover:text-primary">Clients</a>
-							</li>
-							<li>
-								<a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a>
-							</li>
-							<li>
-								<a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div> -->
-
-        <div class="w-full pt-10">
-            <p class="text-center text-xs font-medium text-slate-500">
-                Dibuat dengan <span class="text-pink-500">❤️</span> oleh <a href="https://instagram.com/sandhikagalih"
-                    target="_blank" class="font-bold text-primary">Kelompok 3</a>, menggunakan
-                <a href="https://tailwindcss.com" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a>.
-            </p>
-        </div>
-    </footer>
+    <?php include "../template/footer.php"; ?>
     <!-- Footer End -->
 
     <!-- Back to top Start -->

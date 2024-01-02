@@ -5,7 +5,7 @@ if( !isset($_SESSION["user"])) {
     header("Location: ../masuk.php");
     exit;
 }  
-  include "../functions.php";
+  include "../query/functions.php";
 
 $id = $_GET["id"];
 if (hapusLaporan($id) > 0 ) {

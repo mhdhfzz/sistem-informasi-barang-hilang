@@ -3,5 +3,5 @@ $laporan = query("SELECT *
 FROM laporan
 INNER JOIN user ON laporan.email=user.email
 ORDER BY waktu_dibuat DESC
-LIMIT 9");
+LIMIT 8");
 ?>
