@@ -60,7 +60,7 @@ $email = $_SESSION["user"];
             <div class="flex flex-wrap">
                 <?php include "../query/riwayat-user.php"; ?>
                 <?php foreach( $laporan as $row) : ?>
-                <div class="px-4 w-1/2 lg:w-1/3 xl:w-1/4">
+                <div class="px-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
                     <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark">
                         <div class="group">
                             <img src="../dist/img/laporan/<?= $row["gambar_barang"]; ?>" alt="gambar<?= $i; ?>"
