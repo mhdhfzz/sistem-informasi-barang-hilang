@@ -1,8 +1,8 @@
 <form method="POST" action="">
-    <div class="flex items-center justify-center">
-        <div class="flex w-full mx-10 rounded-full bg-slate-200 mb-12">
+    <div class="flex flex-wrap items-center justify-center">
+        <div class="flex w-full mx-10 rounded-full bg-slate-200 lg:mb-12 mb-4">
             <select name="kategori" id="kategori"
-                class="form-control rounded w-1/4 border-none bg-transparent px-4 py-1 text-dark outline-none focus:outline-none bg-slate-300">
+                class="form-control rounded w-1/4 border-none bg-transparent px-4 py-1 text-dark outline-none focus:outline-none bg-slate-300 hidden lg:block">
                 <option value="">Semua Kategori</option>
                 <option value="elektronik" <?php if ($kategori=="elektronik"){ echo "selected"; } ?>>Barang Elektronik
                 </option>
@@ -26,5 +26,20 @@
                 </svg>
             </button>
         </div>
+        <div class="lg:hidden container pb-8 flex justify-center">
+            <select name="kategori" id="kategori"
+                class="form-control rounded  border-none bg-transparent px-4 py-1 text-dark outline-none focus:outline-none w-1/2 bg-slate-300">
+                <option value="">Semua Kategori</option>
+                <option value="elektronik" <?php if ($kategori=="elektronik"){ echo "selected"; } ?>>Barang Elektronik
+                </option>
+                <option value="penting" <?php if ($kategori=="penting"){ echo "selected"; } ?>>Barang Penting</option>
+                <option value="kendaraan" <?php if ($kategori=="kendaraan"){ echo "selected"; } ?>>Kendaraan</option>
+                <option value="perhiasan" <?php if ($kategori=="perhiasan"){ echo "selected"; } ?>>Perhiasan</option>
+                <option value="dokumen" <?php if ($kategori=="dokumen"){ echo "selected"; } ?>>Surat atau Dokumen
+                    Penting</option>
+                <option value="lainnya" <?php if ($kategori=="lainnya"){ echo "selected"; } ?>>Lainnya</option>
+            </select>
+        </div>
+
     </div>
 </form>
