@@ -9,6 +9,15 @@ if( isset($_SESSION["admin"])) {
     exit;
 }
 
+$kategori="";
+$katakunci="";
+// cek apakah tombol search sudah ditekan atau belum
+if (isset($_POST['search'])) {
+    // $kategori = $_POST['kategori'];
+    $katakunci = $_POST['katakunci'];
+
+}
+
 include "query/functions.php";
 
 
@@ -62,7 +71,7 @@ include "query/functions.php";
 
     <!-- Laporan limit 8 Section Start -->
     <?php 
-    $limit8 = "query/laporan-limit-8.php";
+    $path = "query/laporan-limit-8.php";
     include "template/tampilan-laporan.php";
     ?>
     <!-- Laporan Section End -->
