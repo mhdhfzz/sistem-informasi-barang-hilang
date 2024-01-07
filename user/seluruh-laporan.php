@@ -70,8 +70,13 @@ $email = $_SESSION["user"];
             <!-- Search End -->
 
             <div class="flex flex-wrap">
-                <?php include "../query/search.php"; ?>
-                <?php foreach( $laporan as $row) : ?>
+                <?php include "../query/search.php"; 
+                if (empty($laporan)) { ?>
+                <div class="container h-screen">
+                    <h1 class="flex justify-center mt-8 text-xl dark:text-secondary lg:text-2xl">Laporan Tidak
+                        Ditemukan</h1>
+                </div>
+                <?php } else { foreach( $laporan as $row) : ?>
                 <div class="px-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
                     <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark">
                         <div class="group">
@@ -183,7 +188,7 @@ $email = $_SESSION["user"];
                     </div>
                 </div>
                 <?php $i++; ?>
-                <?php endforeach; ?>
+                <?php endforeach; } ?>
             </div>
         </div>
     </section>
