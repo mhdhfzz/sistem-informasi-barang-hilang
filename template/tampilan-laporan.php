@@ -14,6 +14,7 @@
                     <input
                         class=" w-full border-none bg-transparent px-4 py-1 text-dark outline-none focus:outline-none "
                         type="search" name="katakunci" placeholder="Search..." value="<?= $katakunci; ?>" />
+                    <input class="hidden" type="teks" name="kategori" value="<?= $kategori; ?>" />
                     <button type="submit" name="search"
                         class="m-2 rounded-full bg-primary px-4 py-1 text-white hover:animate-pulse">
                         <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg"

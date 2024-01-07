@@ -7,7 +7,7 @@ $kategori="";
 $katakunci="";
 // cek apakah tombol search sudah ditekan atau belum
 if (isset($_POST['search'])) {
-    // $kategori = $_POST['kategori'];
+    $kategori = $_POST['kategori'];
     $katakunci = $_POST['katakunci'];
 
 }
