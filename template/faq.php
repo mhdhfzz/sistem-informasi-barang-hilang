@@ -37,16 +37,15 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-dark dark:text-secondary">
-                                How long we deliver your first blog post?
+                                Apa itu iLost?
                             </h4>
                         </div>
                     </button>
                     <div x-show="openFaq1" class="faq-content pl-[62px]">
                         <p class="py-3 text-base leading-relaxed text-body-color dark:text-backgr">
-                            It takes 2-3 weeks to get your first blog post ready. That
-                            includes the in-depth research & creation of your monthly
-                            content marketing strategy that we do before writing your
-                            first blog post, Ipsum available .
+                            iLost adalah sistem informasi kehilangan barang berbasis website yang bertujuan untuk
+                            membantu civitas akademika melaporkan, mencari, dan berbagi informasi mengenai barang yang
+                            hilang di sekitar kampus UNAND.
                         </p>
                     </div>
                 </div>
@@ -64,16 +63,15 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-dark dark:text-secondary">
-                                How long we deliver your first blog post?
+                                Apa saja syarat untuk membuat laporan barang hilang atau barang temuan?
                             </h4>
                         </div>
                     </button>
                     <div x-show="openFaq2" class="faq-content pl-[62px]">
                         <p class="py-3 text-base leading-relaxed text-body-color dark:text-backgr">
-                            It takes 2-3 weeks to get your first blog post ready. That
-                            includes the in-depth research & creation of your monthly
-                            content marketing strategy that we do before writing your
-                            first blog post, Ipsum available .
+                            untuk membuat laporan, anda perlu mendaftar akun di website
+                            kami. Ini bertujuan untuk membantu kami memverifikasi informasi dan memberikan pembaruan
+                            terkait status pelaporan.
                         </p>
                     </div>
                 </div>
@@ -91,16 +89,13 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-dark dark:text-secondary">
-                                How long we deliver your first blog post?
+                                Adakah batasan dalam membuat laporan untuk setiap akun?
                             </h4>
                         </div>
                     </button>
                     <div x-show="openFaq3" class="faq-content pl-[62px]">
                         <p class="py-3 text-base leading-relaxed text-body-color dark:text-backgr">
-                            It takes 2-3 weeks to get your first blog post ready. That
-                            includes the in-depth research & creation of your monthly
-                            content marketing strategy that we do before writing your
-                            first blog post, Ipsum available .
+                            Setiap akun tidak memiliki batasan dalam membuat laporkan.
                         </p>
                     </div>
                 </div>
@@ -120,16 +115,14 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-dark dark:text-secondary">
-                                How long we deliver your first blog post?
+                                Bagaimana cara menemukan barang hilang?
                             </h4>
                         </div>
                     </button>
                     <div x-show="openFaq4" class="faq-content pl-[62px]">
                         <p class="py-3 text-base leading-relaxed text-body-color dark:text-backgr">
-                            It takes 2-3 weeks to get your first blog post ready. That
-                            includes the in-depth research & creation of your monthly
-                            content marketing strategy that we do before writing your
-                            first blog post, Ipsum available .
+                            Untuk menemukan barang yang hilang silahkan hubungi kontak yang tertera pada Informasi
+                            barang hilang.
                         </p>
                     </div>
                 </div>
@@ -147,16 +140,14 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-dark dark:text-secondary">
-                                How long we deliver your first blog post?
+                                Apakah ada biaya yang dikeluarkan terkait layanan di website ini.
                             </h4>
                         </div>
                     </button>
                     <div x-show="openFaq5" class="faq-content pl-[62px]">
                         <p class="py-3 text-base leading-relaxed text-body-color dark:text-backgr">
-                            It takes 2-3 weeks to get your first blog post ready. That
-                            includes the in-depth research & creation of your monthly
-                            content marketing strategy that we do before writing your
-                            first blog post, Ipsum available .
+                            Tidak,layanan di website ini tidak dikenakan biaya. Layanan ini disediakan sebagai bagian
+                            dari upaya kami untuk membantu komunitas.
                         </p>
                     </div>
                 </div>
@@ -174,16 +165,15 @@
                         </div>
                         <div class="w-full">
                             <h4 class="mt-1 text-lg font-semibold text-dark dark:text-secondary">
-                                How long we deliver your first blog post?
+                                Bagaimana cara mengubah atau memperbarui informasi dalam laporan telah dibuat?
                             </h4>
                         </div>
                     </button>
                     <div x-show="openFaq6" class="faq-content pl-[62px]">
                         <p class="py-3 text-base leading-relaxed text-body-color dark:text-backgr">
-                            It takes 2-3 weeks to get your first blog post ready. That
-                            includes the in-depth research & creation of your monthly
-                            content marketing strategy that we do before writing your
-                            first blog post, Ipsum available .
+                            Jika Anda hendak memperbarui informasi dalam laporan yang telah dibuat, silakan masuk ke
+                            akun Anda dan kunjungi bagian "Riwayat Laporan" pada bagian navigasi. Anda dapat memperbarui
+                            informasi yang diperlukan dari sana.
                         </p>
                     </div>
                 </div>
