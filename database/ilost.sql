@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Jan 2024 pada 17.37
+-- Waktu pembuatan: 07 Jan 2024 pada 13.27
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -86,7 +86,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`email`, `username`, `nama`, `kelamin`, `password`, `gambar`, `kontak`) VALUES
-('ciafiz111@gmail.com', 'mhafiz001', 'Muhammad Hafiz', 'L', '$2y$10$hNguVtwyHpPof/c69aKfxOJ6rfUAND8gTjeHlwJ21MupVHKyVe2u.', '6591d02df238f84976484_p0 - Watch.jpg', '0823');
+('ciafiz111@gmail.com', 'mhafiz001', 'Muhammad Hafiz', 'L', '$2y$10$hNguVtwyHpPof/c69aKfxOJ6rfUAND8gTjeHlwJ21MupVHKyVe2u.', '659a980ca444837520194_p0 - チェルシー.png', '0823');
 
 --
 -- Indexes for dumped tables
