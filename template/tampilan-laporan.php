@@ -36,8 +36,8 @@
             <div class="px-4 md:w-1/2 lg:w-1/3 xl:w-1/4">
                 <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark">
                     <div class="group">
-                        <img src="/ilost/dist/img/laporan/<?= $row["gambar_barang"]; ?>" alt="gambar<?= $i; ?>"
-                            class="w-full group-hover:scale-125 transition-all duration-500" />
+                        <img src="/<?= basename(dirname(__DIR__)); ?>/dist/img/laporan/<?= $row["gambar_barang"]; ?>"
+                            alt="gambar<?= $i; ?>" class="w-full group-hover:scale-125 transition-all duration-500" />
                     </div>
 
                     <div class="py-4 px-6">
@@ -103,7 +103,7 @@
                                     <!--Modal body-->
                                     <div class="relative p-4 dark:text-white">
                                         <div class="py-4 group">
-                                            <img src="/ilost/dist/img/laporan/<?= $row["gambar_barang"]; ?>"
+                                            <img src="/<?= basename(dirname(__DIR__)); ?>/dist/img/laporan/<?= $row["gambar_barang"]; ?>"
                                                 alt="gambar<?= $i; ?>" class="w-full" />
                                         </div>
                                         <p>

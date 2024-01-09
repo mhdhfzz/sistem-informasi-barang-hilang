@@ -17,7 +17,8 @@
             </div>
             <div class="w-full self-end px-4 lg:w-1/2">
                 <div class="relative mt-10 lg:right-0 lg:mt-9">
-                    <img src="/ilost/dist/img/hero.png" alt="hero" class="relative z-10 mx-auto lg:w-full max-w-full" />
+                    <img src="/<?= basename(dirname(__DIR__)); ?>/dist/img/hero.png" alt="hero"
+                        class="relative z-10 mx-auto lg:w-full max-w-full" />
                 </div>
             </div>
         </div>
