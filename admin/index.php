@@ -1,4 +1,7 @@
 <?php include('config.php');
+session_start();
+if(!isset($_SESSION["admin"]))
+header("location: ../masuk.php");
 //total data user
 $querySelect = "SELECT * FROM user";
 $resultSelect = mysqli_query($koneksi, $querySelect);
@@ -14,6 +17,7 @@ $querySelect = "SELECT * FROM laporan WHERE kategori_laporan = 'Hilang'";
 $resultSelect = mysqli_query($koneksi, $querySelect);
 $totalDataHilang = mysqli_num_rows($resultSelect);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
@@ -53,7 +57,8 @@ $totalDataHilang = mysqli_num_rows($resultSelect);
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
                             Pelaporan Barang
                         </a>
                         <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -67,7 +72,8 @@ $totalDataHilang = mysqli_num_rows($resultSelect);
                 </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                    <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
+                        aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
                         Auth
                     </a>
                     <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -118,7 +124,8 @@ $totalDataHilang = mysqli_num_rows($resultSelect);
                                             </div>
                                         </div>
                                         <div class="col-6 align-self-end text-end">
-                                            <img src="image/customer-support.jpg" class="img-fluid illustration-img" alt="">
+                                            <img src="image/customer-support.jpg" class="img-fluid illustration-img"
+                                                alt="">
                                         </div>
                                     </div>
                                 </div>

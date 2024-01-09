@@ -14,17 +14,17 @@ include "query/functions.php";
 if( isset($_POST["submit"])) {
 
     $email = $_POST["email"];
-    $password = $_POST["password"];
+    $password = md5($_POST["password"]);
 
 
-    $admin = mysqli_query($conn, "SELECT email FROM admin");
+    $admin = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$email'");
     $result = mysqli_query($conn, "SELECT * FROM user WHERE email = '$email'");
     
     // cek email
     if( mysqli_num_rows($admin) === 1 ) {
         // cek password
-        $row = mysqli_fetch_assoc($result);
-        if( password_verify($password, $row["password"]) ) {
+        $row = mysqli_fetch_assoc($admin);
+        if( $password === $row["password"]) {
             $_SESSION["admin"] = "$email";
 
             header("Location: admin/index.php");
