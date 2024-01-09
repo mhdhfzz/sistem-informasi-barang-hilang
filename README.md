@@ -1,3 +1,50 @@
+# Project UAS RPL
+Ini merupakan Source Code Project UAS Rekayasa Perangkat Lunak B Kelompok 3
+
+[Hasil Project]()
+
+
+## Group Members RPL3
+- 2111511010 Zahran Fikri
+- 2111511018 Khairun Nisak
+- 2111511022 Arista Zhafirah
+- 2111512006 Muhammad Hafiz
+- 2111512024 M. Arvin Haravanda
+- 2111513012 Anisha Shathya
+
+## Technology Use
+### Front End :
+html, css, tailwindcss, javascript
+
+### Back End :
+php, sql server
+
+## Installation Database
+
+Import Database
+
+```bash
+  Di dalam folder Database terdapat file ilost.sql
+```
+    
+## Akun
+### Admin
+fiz@gmail.com:1
+
+### user
+ciafiz111@gmail.com:1
+tifany@gmail.com:1
+
+## Website Pages:
+### Login:
+email, password
+### Beranda:
+tampila hero, pencarian barang, tampilan beberapa laporan, FAQ
+### Panel User
+pencarian barang, tampilan beberapa laporan, FAQ, lapor barang hilang, lapor barang temuan, riwayat laporan, profil user
+### Panel Admin
+mengelola user, memantau laporan, profil admin
+
 ## Cara lakukan perubahan pada css
 1.  Pastikan sudah terinstall nodejs pada personal computer yang dimiliki, jika belum silahkan [install](https://nodejs.org/) terlebih dahulu 
 
