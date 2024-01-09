@@ -17,18 +17,29 @@ if( isset($_POST["submit"])) {
         $id = $_POST["id"];
         $src = $_FILES["fileImg"]["tmp_name"];
         $imageName = uniqid() . $_FILES["fileImg"]["name"];
-    
         $target = "../dist/img/users/" . $imageName;
         move_uploaded_file($src, $target);
     }
-    // cek apakah data berhasil diubah atau tidak
-    ubahprofil($_POST, $imageName);
-    echo "
-    <script>
-    alert('Profil Berhasil Diubah');
-    document.location.href = 'profil.php';
-    </script>
-    ";
+    if (empty($imageName)){
+        // cek apakah data berhasil diubah atau tidak
+        ubahprofil($_POST, $user['gambar']);
+        echo "
+        <script>
+        alert('Profil Berhasil Diubah');
+        document.location.href = 'profil.php';
+        </script>
+        ";
+    } else {
+        // cek apakah data berhasil diubah atau tidak
+        ubahprofil($_POST, $imageName);
+        echo "
+        <script>
+        alert('Profil Berhasil Diubah');
+        document.location.href = 'profil.php';
+        </script>
+        ";
+    }
+    
 }
 
 ?>
