@@ -110,7 +110,7 @@ if (!$resultSelect) {
                                         echo "<td>". $row['kategori_barang'] ."</td>";
                                         echo "<td>". $row['tanggal_ditemukan'] ."</td>";
                                         echo "<td>". $row['lokasi'] ."</td>";
-                                        echo "<td>". $row['gambar_barang'] ."</td>";
+                                        echo "<td><img src='/" . basename(dirname(__DIR__)) . "/dist/img/laporan/" . $row['gambar_barang'] . "' class='img-fluid ' style='width: 125px; height: 125px;' alt=''/></td>";
                                         echo "<td>". $row['waktu_dibuat'] ."</td>";
                                         echo "<td><a href='barangtemuan.php?id=" . $row['id'] . "' class='btn btn-danger btn-sm'>Delete</a></td>";
                                         echo "</tr>";
