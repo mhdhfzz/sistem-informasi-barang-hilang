@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Jan 2024 pada 13.27
+-- Waktu pembuatan: 09 Jan 2024 pada 21.11
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -31,8 +31,16 @@ CREATE TABLE `admin` (
   `email` varchar(40) NOT NULL,
   `nama` varchar(45) DEFAULT NULL,
   `kelamin` char(1) DEFAULT NULL,
-  `password` varchar(255) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `admin`
+--
+
+INSERT INTO `admin` (`email`, `nama`, `kelamin`, `password`, `image`) VALUES
+('fiz@gmail.com', 'M Hafiz', 'L', 'c4ca4238a0b923820dcc509a6f75849b', 'te.jpg');
 
 -- --------------------------------------------------------
 
@@ -58,12 +66,10 @@ CREATE TABLE `laporan` (
 --
 
 INSERT INTO `laporan` (`id`, `email`, `kategori_laporan`, `nama_barang`, `deskripsi`, `kategori_barang`, `tanggal_ditemukan`, `lokasi`, `gambar_barang`, `waktu_dibuat`) VALUES
-(1, 'ciafiz111@gmail.com', 'Hilang', 'Jaket', 'warna biru', 'lainnya', '2023-12-28', 'padang', '6591da041a4a1No Game No Life Wallpaper.jpg', '2024-01-01 04:15:48'),
-(3, 'ciafiz111@gmail.com', 'temuan', 'Jaket', 'warna biru', 'lainnya', '2023-12-28', 'padang', '659195b3aa6c4Anime Girl Wallpaper (1).jpg', '2023-12-31 23:07:19'),
-(4, 'ciafiz111@gmail.com', 'Hilang', 'tess', 'wafwa', 'perhiasan', '2023-12-04', 'padang', '6591da2b973afTo Your Eternity Wallpaper (1).jpg', '2024-01-01 04:16:27'),
-(5, 'ciafiz111@gmail.com', 'temuan', 'setang', 'dwa', 'elektronik', '2023-11-29', 'dwa', '659195b3aa6c4Anime Girl Wallpaper (1).jpg', '2023-12-31 23:24:19'),
-(6, 'ciafiz111@gmail.com', 'temuan', 'Jaket', 'wa', 'penting', '2023-12-15', 'wad', '659196ab36c8f79603059_p0 - 栗花落カナヲ.jpg', '2023-12-31 23:28:27'),
-(7, 'ciafiz111@gmail.com', 'Hilang', 'dwa', 'daw', 'kendaraan', '2023-12-21', 'dwa', '659436e0d567bAnime Girl Wallpaper.jpg', '2024-01-02 23:16:32');
+(12, 'tifany@gmail.com', 'Temuan', 'Jam Tangan', 'Jam tangan warna coklat', 'perhiasan', '2024-01-01', 'Gedung E UNAND', '659d9ce69623ajam-tangan.jpeg', '2024-01-01 02:22:14'),
+(13, 'tifany@gmail.com', 'Hilang', 'Kunci Motor', 'Kunci motor dengan gantungan berwarna coklat', 'kendaraan', '2024-01-02', 'Gedung F UNAND', '659d9d3491353kunci-motor.jpeg', '2024-01-02 02:23:32'),
+(14, 'ciafiz111@gmail.com', 'Temuan', 'Cincin', 'Cincin berwarna emas', 'perhiasan', '2024-01-04', 'Auditorium UNAND', '659da3cbaba63cincin.jpeg', '2024-01-04 12:51:39'),
+(15, 'ciafiz111@gmail.com', 'Hilang', 'Botol Minum', 'Botol minum warna ungu', 'lainnya', '2024-01-08', 'Gedung E1.5 UNAND', '659da46114f6bbotol-minum.jpeg', '2024-01-09 10:54:09');
 
 -- --------------------------------------------------------
 
@@ -86,7 +92,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`email`, `username`, `nama`, `kelamin`, `password`, `gambar`, `kontak`) VALUES
-('ciafiz111@gmail.com', 'mhafiz001', 'Muhammad Hafiz', 'L', '$2y$10$hNguVtwyHpPof/c69aKfxOJ6rfUAND8gTjeHlwJ21MupVHKyVe2u.', '659a980ca444837520194_p0 - チェルシー.png', '0823');
+('ciafiz111@gmail.com', 'mhafiz001', 'Muhammad Hafiz', 'L', '$2y$10$hNguVtwyHpPof/c69aKfxOJ6rfUAND8gTjeHlwJ21MupVHKyVe2u.', '659a980ca444837520194_p0 - チェルシー.png', '0823'),
+('tifany@gmail.com', 'tifany_', 'Tifany Anant', 'P', '$2y$10$5vCbcJzh/hPIbMHF/B6ij.L9ZK175rHWzr02kh04snSphvwx2ntNi', '659da36295b7aaoi-ogata-bx-girlz.jpg', '');
 
 --
 -- Indexes for dumped tables
@@ -119,7 +126,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
