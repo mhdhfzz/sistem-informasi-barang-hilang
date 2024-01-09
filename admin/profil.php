@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 session_start();
-$user_id = 'arvinhva@gmail.com'; // Mendapatkan ID pengguna dari sesi
+$user_id = $_SESSION["admin"]; // Mendapatkan ID pengguna dari sesi
 
 if (isset($_POST['update_profile'])) {
     // Update nama dan email
@@ -92,7 +92,8 @@ if (isset($_POST['update_profile'])) {
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
                             Pelaporan Barang
                         </a>
                         <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -106,17 +107,10 @@ if (isset($_POST['update_profile'])) {
                 </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
-                        Auth
+                    <a href="../keluar.php" class="sidebar-link collapsed" data-bs-target="#auth"
+                        data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                        Keluar
                     </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Forgot Password</a>
-                        </li>
-                    </ul>
                 </li>
                 </ul>
             </div>
@@ -134,7 +128,7 @@ if (isset($_POST['update_profile'])) {
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a href="#" class="dropdown-item">Profile</a>
-                                <a href="#" class="dropdown-item">Logout</a>
+                                <a href="../keluar.php" class="dropdown-item">Keluar</a>
                             </div>
                         </li>
                     </ul>
@@ -173,23 +167,29 @@ if (isset($_POST['update_profile'])) {
                         <div class="flex">
                             <div class="inputBox">
                                 <span>Your Email :</span>
-                                <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>" class="box">
+                                <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>"
+                                    class="box">
                                 <span>Username :</span>
                                 <input type="text" name="update_nama" value="<?php echo $fetch['nama']; ?>" class="box">
                                 <span>Kelamin :</span>
-                                <input type="kelamin" name="update_kelamin" value="<?php echo $fetch['kelamin']; ?>" class="box">
+                                <input type="kelamin" name="update_kelamin" value="<?php echo $fetch['kelamin']; ?>"
+                                    class="box">
                                 <span>update your pic :</span>
-                                <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
+                                <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png"
+                                    class="box">
                             </div>
                             <div class="inputBox">
                                 <input type="hidden" name="old_pass" value="<?php echo $fetch['password']; ?>">
                                 <span>old password :</span>
-                                <input type="password" name="update_pass" placeholder="enter previous password" class="box">
+                                <input type="password" name="update_pass" placeholder="enter previous password"
+                                    class="box">
                                 <span>new password :</span>
                                 <input type="password" name="new_pass" placeholder="enter new password" class="box">
                                 <span>confirm password :</span>
-                                <input type="password" name="confirm_pass" placeholder="confirm new password" class="box">
-                                <button class="update-profile-btn" value="update profile" name="update_profile">Update Profile</button>
+                                <input type="password" name="confirm_pass" placeholder="confirm new password"
+                                    class="box">
+                                <button class="update-profile-btn" value="update profile" name="update_profile">Update
+                                    Profile</button>
                                 <a href="home.php" class="delete-btn">go back</a>
                             </div>
                         </div>

@@ -72,23 +72,15 @@ if (!$resultSelect) {
                             <li class="sidebar-item">
                                 <a href="baranghilang.php" class="sidebar-link">Barang Hilang</a>
                             </li>
-                            </li>
-                        </ul>
                     </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse"
-                            aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
-                            Auth
-                        </a>
-                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Login</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Forgot Password</a>
-                            </li>
-                        </ul>
-                    </li>
+                </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="../keluar.php" class="sidebar-link collapsed" data-bs-target="#auth"
+                        data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                        Keluar
+                    </a>
+                </li>
                 </ul>
             </div>
         </aside>
@@ -105,7 +97,7 @@ if (!$resultSelect) {
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a href="#" class="dropdown-item">Profile</a>
-                                <a href="#" class="dropdown-item">Logout</a>
+                                <a href="../keluar.php" class="dropdown-item">Keluar</a>
                             </div>
                         </li>
                     </ul>
@@ -139,7 +131,7 @@ if (!$resultSelect) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                <?php
+                                    <?php
                                 $no = 1;
                                     while ($row = mysqli_fetch_assoc($resultSelect)) {
                                         echo "<tr>";

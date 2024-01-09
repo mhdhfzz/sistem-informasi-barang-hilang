@@ -55,7 +55,8 @@ $resultSelect = mysqli_query($koneksi, $querySelect);
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#posts" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-sliders pe-2"></i>
                             Pelaporan Barang
                         </a>
                         <ul id="posts" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -69,17 +70,10 @@ $resultSelect = mysqli_query($koneksi, $querySelect);
                 </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed" data-bs-target="#auth" data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
-                        Auth
+                    <a href="../keluar.php" class="sidebar-link collapsed" data-bs-target="#auth"
+                        data-bs-toggle="collapse" aria-expanded="false"><i class="fa-regular fa-user pe-2"></i>
+                        Keluar
                     </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Forgot Password</a>
-                        </li>
-                    </ul>
                 </li>
                 </ul>
             </div>
@@ -97,7 +91,7 @@ $resultSelect = mysqli_query($koneksi, $querySelect);
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a href="#" class="dropdown-item">Profile</a>
-                                <a href="#" class="dropdown-item">Logout</a>
+                                <a href="../keluar.php" class="dropdown-item">Keluar</a>
                             </div>
                         </li>
                     </ul>
