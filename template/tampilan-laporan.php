@@ -124,7 +124,13 @@
                                             </span><?= $row["lokasi"]; ?>
                                             </br>
                                             <span class="text-primary dark:text-secondary">Kontak: </span>
-                                            <?= $row["kontak"]; ?> dan <?= $row["email"]; ?>
+                                            <?php 
+                                            if (!empty($row["kontak"] && !empty($row["email"]))) {
+                                                echo $row["kontak"].' dan '.$row["email"];
+                                            } else { 
+                                                echo $row["email"];
+                                            }
+                                                ?>
                                         </p>
                                     </div>
 
