@@ -21,7 +21,7 @@ php, sql server
 
 ## Installation Database
 
-Import Database
+Import Database berikut dengan nama ilost
 
 ```bash
   Di dalam folder Database terdapat file ilost.sql
