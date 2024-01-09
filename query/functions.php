@@ -56,10 +56,10 @@ function registrasi($data) {
     }
     
     // enkripsi password
-    $password = password_hash($password, PASSWORD_DEFAULT);
+    $password = md5($password);
 
     // tambahkan userbaru ke database
-    mysqli_query($conn, "INSERT INTO user VALUES('$email', NULL,'$nama','$kelamin','$password','',NULL)");
+    mysqli_query($conn, "INSERT INTO user VALUES('$email', NULL,'$nama','$kelamin','$password','default-avatar.png',NULL)");
 
     return mysqli_affected_rows($conn);
 }

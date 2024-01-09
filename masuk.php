@@ -14,7 +14,7 @@ include "query/functions.php";
 if( isset($_POST["submit"])) {
 
     $email = $_POST["email"];
-    $password = md5($_POST["password"]);
+    $password = $_POST["password"];
 
 
     $admin = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$email'");
@@ -24,7 +24,7 @@ if( isset($_POST["submit"])) {
     if( mysqli_num_rows($admin) === 1 ) {
         // cek password
         $row = mysqli_fetch_assoc($admin);
-        if( $password === $row["password"]) {
+        if( md5($password) === $row["password"]) {
             $_SESSION["admin"] = "$email";
 
             header("Location: admin/index.php");
