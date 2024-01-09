@@ -42,8 +42,9 @@
 
                     <div class="py-4 px-6">
                         <h3>
-                            <p
-                                class="block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">
+                            <p class="block truncate text-end text-sm font-semibold text-primary -mt-4">
+                                Barang <?= $row["kategori_laporan"]; ?></p>
+                            <p class="block truncate text-xl font-semibold text-dark dark:text-white ">
                                 <?= $row["nama_barang"]; ?></p>
                             <p class="italic mb-1 dark:text-white">Diposting <span
                                     style="font-style: normal; font-weight:600"><?= $row["nama"]; ?> </span>
