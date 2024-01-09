@@ -8,7 +8,6 @@ if (isset($_POST['update_profile'])) {
     $update_email = mysqli_real_escape_string($koneksi, $_POST['update_email']);
     $update_nama = mysqli_real_escape_string($koneksi, $_POST['update_nama']);
     $update_kelamin = mysqli_real_escape_string($koneksi, $_POST['update_kelamin']);
-
     mysqli_query($koneksi, "UPDATE `admin` SET email = '$update_email', nama = '$update_nama', kelamin = '$update_kelamin' WHERE email = '$user_id'") or die('Query failed');
 
     if (!empty($_POST['update_pass'])) {
@@ -136,14 +135,18 @@ if (isset($_POST['update_profile'])) {
 
                         <div class="flex">
                             <div class="inputBox">
-                                <span>Your Email :</span>
+                                <span>Email :</span>
                                 <input type="email" name="update_email" value="<?php echo $fetch['email']; ?>"
                                     class="box">
-                                <span>Username :</span>
+                                <span>Nama :</span>
                                 <input type="text" name="update_nama" value="<?php echo $fetch['nama']; ?>" class="box">
-                                <span>Kelamin :</span>
-                                <input type="kelamin" name="update_kelamin" value="<?php echo $fetch['kelamin']; ?>"
-                                    class="box">
+                                <span>Jenis Kelamin :</span>
+                                <select class="box" name="update_kelamin">
+                                    <option value="L" <?php if($fetch["kelamin"]=="L"){echo "selected";} ?>>Laki-Laki
+                                    </option>
+                                    <option value="P" <?php if($fetch["kelamin"]=="P"){echo "selected";} ?>>Perempuan
+                                    </option>
+                                </select>
                                 <span>update your pic :</span>
                                 <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png"
                                     class="box">
