@@ -56,7 +56,7 @@ function registrasi($data) {
     }
     
     // enkripsi password
-    $password = md5($password);
+    $password = password_hash($password, PASSWORD_DEFAULT);
 
     // tambahkan userbaru ke database
     mysqli_query($conn, "INSERT INTO user VALUES('$email', NULL,'$nama','$kelamin','$password','default-avatar.png',NULL)");

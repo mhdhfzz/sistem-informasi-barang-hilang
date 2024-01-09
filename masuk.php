@@ -26,7 +26,6 @@ if( isset($_POST["submit"])) {
         $row = mysqli_fetch_assoc($admin);
         if( md5($password) === $row["password"]) {
             $_SESSION["admin"] = "$email";
-
             header("Location: admin/index.php");
             exit;
             } 
@@ -36,7 +35,6 @@ if( isset($_POST["submit"])) {
         if( password_verify($password, $row["password"]) ) {
             // set session
             $_SESSION["user"] = "$email";
-
             header("Location: user/index.php");
             exit;
         }
