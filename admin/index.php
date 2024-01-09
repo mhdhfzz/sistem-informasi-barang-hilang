@@ -26,7 +26,7 @@ $totalDataHilang = mysqli_num_rows($resultSelect);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Admin</title>
+    <title>Dashboard Admin | iLost</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -34,9 +34,9 @@ $totalDataHilang = mysqli_num_rows($resultSelect);
 
 <body>
     <div class="wrapper">
-        <!-- Header Start -->
+        <!-- Side Bar Start -->
         <?php include "../template/navbar-admin.php"; ?>
-        <!-- Header End -->
+        <!-- Side Bar End -->
         <div class="main">
             <nav class="navbar navbar-expand px-3 border-bottom">
                 <button class="btn" id="sidebar-toggle" type="button">
@@ -46,7 +46,19 @@ $totalDataHilang = mysqli_num_rows($resultSelect);
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
                             <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                <img src="image/profile.jpg" class="avatar img-fluid rounded" alt="">
+                                <?php 
+                                $user_id = $_SESSION["admin"];
+                                $select = mysqli_query($koneksi, "SELECT image FROM admin WHERE email = '$user_id'");
+                                $fetch = null;
+                                if (mysqli_num_rows($select) > 0) {
+                                    $fetch = mysqli_fetch_assoc($select);
+                                }
+                                if ($fetch['image'] == null) {
+                                    echo '<img src="image/default-avatar.png" class="avatar img-fluid rounded" alt="">';
+                                } else {
+                                    echo '<img src="uploaded_img/' . $fetch['image'] . '" class="avatar img-fluid rounded" alt="">';
+                                }
+                                ?>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
                                 <a href="profil.php" class="dropdown-item">Profile</a>

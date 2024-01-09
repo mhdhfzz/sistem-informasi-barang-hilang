@@ -2,18 +2,18 @@
     <!-- Content For Sidebar -->
     <div class="h-100">
         <div class="sidebar-logo">
-            <a href="#">iLost</a>
+            <a href="index.php">iLost</a>
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php" class="sidebar-link">
                     <i class="fa-solid fa-list pe-2"></i>
                     Dashboard
                 </a>
             </li>
             <li class="sidebar-item">
                 <a href="useradmin.php" class="sidebar-link">
-                    <i class="fa-solid fa-list pe-2"></i>
+                    <i class="fa-solid fa-users pe-2"></i>
                     User
                 </a>
             </li>
@@ -33,15 +33,11 @@
         </ul>
         </li>
         <li class="sidebar-item">
-            <a href="../keluar.php" class="sidebar-link"><i class="fa-regular fa-user pe-2"></i>
-                Keluar
-            </a>
+            <a href="profil.php" class="sidebar-link"><i class="fa-regular fa-user pe-2"></i>Profil Admin</a>
         </li>
         <li class="sidebar-item">
-            <a href="profil.php" class="sidebar-link"><i class="fa-regular fa-user pe-2"></i>
-                Profil Admin
-            </a>
+            <a href="../keluar.php" class="sidebar-link"><i
+                    class="fa-solid fa-arrow-right-from-bracket pe-2"></i>Keluar</a>
         </li>
-        </ul>
     </div>
 </aside>
