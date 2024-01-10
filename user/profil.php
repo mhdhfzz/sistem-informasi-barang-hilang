@@ -20,7 +20,7 @@ if( isset($_POST["submit"])) {
         $target = "../dist/img/users/" . $imageName;
         move_uploaded_file($src, $target);
     }
-    if (empty($imageName)){
+    if (empty($src)){
         // cek apakah data berhasil diubah atau tidak
         ubahprofil($_POST, $user['gambar']);
         echo "

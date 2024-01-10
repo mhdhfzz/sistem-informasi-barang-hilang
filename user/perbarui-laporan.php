@@ -22,13 +22,26 @@ if( isset($_POST["submit"])) {
         move_uploaded_file($src, $target);
     }
     // cek apakah data berhasil diubah atau tidak
-    ubahLaporan($_POST, $imageName);
-    echo "
-    <script>
-    alert('Laporan Berhasil Diperbarui');
-    document.location.href = 'riwayat-laporan.php';
-    </script>
-    ";
+    
+
+    if (empty($src)){
+        // cek apakah data berhasil diubah atau tidak
+        ubahLaporan($_POST, $laporan['gambar_barang']);
+        echo "
+        <script>
+        alert('Laporan Berhasil Diperbarui');
+        document.location.href = 'riwayat-laporan.php';
+        </script>
+        ";
+    } else {
+        ubahLaporan($_POST, $imageName);
+        echo "
+        <script>
+        alert('Laporan Berhasil Diperbarui');
+        document.location.href = 'riwayat-laporan.php';
+        </script>
+        ";
+    }
 }
 
 ?>
