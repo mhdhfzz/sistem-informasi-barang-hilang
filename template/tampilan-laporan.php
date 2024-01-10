@@ -37,7 +37,8 @@
                 <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-dark">
                     <div class="group">
                         <img src="/<?= basename(dirname(__DIR__)); ?>/dist/img/laporan/<?= $row["gambar_barang"]; ?>"
-                            alt="gambar<?= $i; ?>" class="w-full group-hover:scale-125 transition-all duration-500" />
+                            alt="gambar<?= $i; ?>"
+                            class="w-full group-hover:scale-125 transition-all duration-500 h-[220px]" />
                     </div>
 
                     <div class="py-4 px-6">
@@ -105,7 +106,7 @@
                                     <div class="relative p-4 dark:text-white">
                                         <div class="py-4 group">
                                             <img src="/<?= basename(dirname(__DIR__)); ?>/dist/img/laporan/<?= $row["gambar_barang"]; ?>"
-                                                alt="gambar<?= $i; ?>" class="w-full" />
+                                                alt="gambar<?= $i; ?>" class="w-full h-[300px] lg:h-full" />
                                         </div>
                                         <p>
                                             <span class="text-primary dark:text-secondary">Laporan Barang
