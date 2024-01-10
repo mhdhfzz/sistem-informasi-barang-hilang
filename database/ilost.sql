@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Jan 2024 pada 21.11
+-- Waktu pembuatan: 10 Jan 2024 pada 08.49
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`email`, `nama`, `kelamin`, `password`, `image`) VALUES
-('fiz@gmail.com', 'M Hafiz', 'L', 'c4ca4238a0b923820dcc509a6f75849b', 'te.jpg');
+('fiz@gmail.com', 'M Hafiz', 'L', 'c4ca4238a0b923820dcc509a6f75849b', 'wallpaper.jpg');
 
 -- --------------------------------------------------------
 
@@ -69,7 +69,7 @@ INSERT INTO `laporan` (`id`, `email`, `kategori_laporan`, `nama_barang`, `deskri
 (12, 'tifany@gmail.com', 'Temuan', 'Jam Tangan', 'Jam tangan warna coklat', 'perhiasan', '2024-01-01', 'Gedung E UNAND', '659d9ce69623ajam-tangan.jpeg', '2024-01-01 02:22:14'),
 (13, 'tifany@gmail.com', 'Hilang', 'Kunci Motor', 'Kunci motor dengan gantungan berwarna coklat', 'kendaraan', '2024-01-02', 'Gedung F UNAND', '659d9d3491353kunci-motor.jpeg', '2024-01-02 02:23:32'),
 (14, 'ciafiz111@gmail.com', 'Temuan', 'Cincin', 'Cincin berwarna emas', 'perhiasan', '2024-01-04', 'Auditorium UNAND', '659da3cbaba63cincin.jpeg', '2024-01-04 12:51:39'),
-(15, 'ciafiz111@gmail.com', 'Hilang', 'Botol Minum', 'Botol minum warna ungu', 'lainnya', '2024-01-08', 'Gedung E1.5 UNAND', '659da46114f6bbotol-minum.jpeg', '2024-01-09 10:54:09');
+(15, 'ciafiz111@gmail.com', 'Hilang', 'Botol Minum', 'Botol minum warna ungu', 'lainnya', '2024-01-08', 'Gedung E1.5 UNAND', '659e483d1e668botol-minum.jpeg', '2024-01-10 14:33:40');
 
 -- --------------------------------------------------------
 
@@ -92,7 +92,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`email`, `username`, `nama`, `kelamin`, `password`, `gambar`, `kontak`) VALUES
-('ciafiz111@gmail.com', 'mhafiz001', 'Muhammad Hafiz', 'L', '$2y$10$hNguVtwyHpPof/c69aKfxOJ6rfUAND8gTjeHlwJ21MupVHKyVe2u.', '659a980ca444837520194_p0 - チェルシー.png', '0823'),
+('ciafiz111@gmail.com', 'mhafiz001', 'Muhammad Hafiz', 'L', '$2y$10$hNguVtwyHpPof/c69aKfxOJ6rfUAND8gTjeHlwJ21MupVHKyVe2u.', '659a980ca444837520194_p0 - チェルシー.png', '081231231241'),
 ('tifany@gmail.com', 'tifany_', 'Tifany Anant', 'P', '$2y$10$5vCbcJzh/hPIbMHF/B6ij.L9ZK175rHWzr02kh04snSphvwx2ntNi', '659da36295b7aaoi-ogata-bx-girlz.jpg', '');
 
 --
@@ -126,7 +126,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
