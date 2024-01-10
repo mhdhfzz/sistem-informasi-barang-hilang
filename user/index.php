@@ -26,6 +26,9 @@ include "../query/functions.php";
     <link href="../dist/output.css" rel="stylesheet" />
     <!-- <link href="dist/css/final.css" rel="stylesheet" /> -->
 
+    <!-- icon website -->
+    <link rel="icon" type="image/x-icon" href="../dist/img/icon.png">
+
     <!-- alpinejs -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
 

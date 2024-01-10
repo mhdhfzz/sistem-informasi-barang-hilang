@@ -24,6 +24,9 @@ if (isset($_POST['search'])) {
     <link href="dist/output.css" rel="stylesheet" />
     <!-- <link href="dist/css/final.css" rel="stylesheet" /> -->
 
+    <!-- icon website -->
+    <link rel="icon" type="image/x-icon" href="dist/img/icon.png">
+
     <script>
     if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia(
             "(prefers-color-scheme: dark)").matches)) {
